@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="description" content="Explore Proverra Academy articles, practical guides and learning resources on artificial intelligence, design, technology, business and professional development.">
+
+    <title>Blog & Learning Resources | Proverra Academy</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- MAIN CSS -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+
+
+
+
+<style>
+.blog-hero{padding:88px 0 72px;background:radial-gradient(circle at 85% 15%,rgba(139,92,246,.18),transparent 28%),linear-gradient(135deg,#faf8ff 0%,#fff 58%,#f4f0ff 100%)}
+.blog-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.blog-hero h1{margin:14px 0 20px;font-family:"Poppins",sans-serif;font-size:clamp(2.7rem,5vw,4.6rem);line-height:1.06;letter-spacing:-.045em;color:#172033}
+.blog-hero h1 span{color:#7c3aed}.blog-hero p{max-width:720px;margin:0;color:#596174;font-size:1.08rem;line-height:1.8}
+.blog-search{display:flex;gap:10px;margin-top:30px;max-width:650px}.blog-search input{flex:1;min-width:0;padding:14px 16px;border:1px solid #d9dce4;border-radius:11px;font:inherit;outline:none}.blog-search input:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px rgba(139,92,246,.12)}.blog-search button{border:0;cursor:pointer}
+.blog-hero-card{padding:34px;border:1px solid #e7e0f5;border-radius:24px;background:#fff;box-shadow:0 20px 50px rgba(48,34,82,.09)}
+.blog-hero-card span{display:inline-grid;width:54px;height:54px;place-items:center;border-radius:15px;background:#ede9fe;font-size:1.55rem}.blog-hero-card h2{margin:20px 0 10px;font-family:"Poppins",sans-serif;color:#172033}.blog-hero-card p{font-size:.98rem}.blog-topics{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.blog-topics a{padding:8px 11px;border-radius:999px;background:#faf8ff;color:#5b21b6;text-decoration:none;font-size:.84rem;font-weight:700}
+.blog-section{padding:82px 0}.blog-section.alt{background:#faf8ff}.blog-heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}.blog-heading h2{margin:8px 0 0;font-family:"Poppins",sans-serif;color:#172033;font-size:clamp(2rem,3vw,2.8rem)}.blog-heading p{max-width:610px;margin:0;color:#667085;line-height:1.7}
+.featured-post{display:grid;grid-template-columns:.9fr 1.1fr;overflow:hidden;border:1px solid #e8e2f5;border-radius:24px;background:#fff;box-shadow:0 16px 42px rgba(48,34,82,.07)}
+.featured-visual{min-height:360px;display:grid;place-items:center;padding:38px;background:linear-gradient(135deg,#172033,#5b21b6);color:#fff;text-align:center}.featured-visual span{font-size:4rem}.featured-visual strong{display:block;margin-top:16px;font-family:"Poppins",sans-serif;font-size:1.3rem}
+.featured-content{padding:42px}.post-category{display:inline-block;margin-bottom:15px;color:#7c3aed;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.featured-content h3,.post-card h3{margin:0;color:#172033;font-family:"Poppins",sans-serif}.featured-content h3{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.2}.featured-content p,.post-card p{color:#667085;line-height:1.7}.post-meta{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0;color:#7a8190;font-size:.85rem}.read-link{display:inline-block;margin-top:6px;color:#7c3aed;text-decoration:none;font-weight:800}
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.post-card{overflow:hidden;border:1px solid #e8e2f5;border-radius:20px;background:#fff;transition:transform .2s ease,box-shadow .2s ease}.post-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(48,34,82,.09)}.post-visual{height:170px;display:grid;place-items:center;background:linear-gradient(135deg,#ede9fe,#faf8ff);font-size:3rem}.post-body{padding:24px}.post-card h3{font-size:1.18rem;line-height:1.4}.post-card p{font-size:.94rem}
+.category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.category-card{display:flex;gap:16px;padding:24px;border:1px solid #e8e2f5;border-radius:18px;background:#fff;text-decoration:none;color:inherit}.category-card>span{font-size:1.55rem}.category-card h3{margin:0 0 6px;color:#172033;font-family:"Poppins",sans-serif;font-size:1rem}.category-card p{margin:0;color:#667085;font-size:.9rem;line-height:1.55}
+.blog-cta{padding:0 0 82px}.blog-cta-box{display:flex;justify-content:space-between;gap:38px;align-items:center;padding:46px;border-radius:26px;background:linear-gradient(135deg,#5b21b6,#7c3aed);color:#fff}.blog-cta-box h2{margin:0 0 10px;color:#fff;font-family:"Poppins",sans-serif;font-size:clamp(1.8rem,3vw,2.6rem)}.blog-cta-box p{max-width:650px;margin:0;color:#ede9fe;line-height:1.7}.blog-cta-actions{display:flex;flex-wrap:wrap;gap:12px;flex-shrink:0}.blog-secondary{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:0 20px;border:1px solid rgba(255,255,255,.55);border-radius:10px;color:#fff;text-decoration:none;font-weight:700}
+@media(max-width:950px){.blog-hero-grid,.featured-post{grid-template-columns:1fr}.post-grid,.category-grid{grid-template-columns:repeat(2,1fr)}.blog-cta-box{align-items:flex-start;flex-direction:column}}
+@media(max-width:650px){.blog-hero,.blog-section{padding:62px 0}.blog-search{flex-direction:column}.blog-heading{align-items:flex-start;flex-direction:column}.post-grid,.category-grid{grid-template-columns:1fr}.featured-content{padding:27px}.featured-visual{min-height:260px}.blog-cta{padding-bottom:62px}.blog-cta-box{padding:30px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+
+    <div class="container header-inner">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <div class="brand-mark">
+                P
+            </div>
+
+
+            <div class="brand-text">
+
+                <strong>
+                    Proverra Academy
+                </strong>
+
+                <span>
+                    LEARN • CREATE • GROW
+                </span>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <!-- SCHOOLS DROPDOWN -->
+
+            <div class="nav-dropdown">
+
+                <button
+                    class="nav-dropdown-toggle"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    Schools
+
+                    <span class="dropdown-arrow">
+                        ⌄
+                    </span>
+
+                </button>
+
+
+                <div class="nav-dropdown-menu">
+
+                    <a href="schools.html">
+
+                        <span class="dropdown-icon">
+                            🏫
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                Explore All Schools
+                            </strong>
+
+                            <small>
+                                Discover all Proverra Academy schools
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                    <a href="schools.html#available">
+
+                        <span class="dropdown-icon">
+                            ✓
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                Available Schools
+                            </strong>
+
+                            <small>
+                                Schools currently offering courses
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                    <a href="schools.html#development">
+
+                        <span class="dropdown-icon">
+                            🚀
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                Schools Under Development
+                            </strong>
+
+                            <small>
+                                Discover what's coming next
+                            </small>
+
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="courses.html"
+            >
+                Courses
+            </a>
+
+
+            <a href="about.html">
+                About Us
+            </a>
+
+
+            <a href="blog.html" class="active">
+                Blog
+            </a>
+
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+            <a
+                href="https://learn.proverraacademy.com"
+                class="login-link"
+            >
+                Student Login
+            </a>
+
+
+            <a
+                href="courses.html"
+                class="btn btn-primary"
+            >
+                Start Learning
+            </a>
+
+        </div>
+
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+<main>
+<section class="blog-hero"><div class="container blog-hero-grid">
+<div><span class="section-kicker">PROVERRA LEARNING HUB</span><h1>Learn Beyond the <span>Classroom.</span></h1><p>Explore practical articles, guides and learning resources designed to help you understand modern tools, strengthen professional skills and continue learning beyond your courses.</p>
+<form class="blog-search" onsubmit="return false;"><input id="blogSearch" type="search" placeholder="Search articles and learning resources..." aria-label="Search blog"><button id="blogSearchButton" class="btn btn-primary" type="button">Search</button></form></div>
+<div class="blog-hero-card"><span>📚</span><h2>Practical Knowledge. Useful Skills.</h2><p>Our Learning Hub will grow alongside Proverra Academy with beginner-friendly explanations, practical guides and professional learning resources.</p><div class="blog-topics"><a href="#ai">Artificial Intelligence</a><a href="#design">Design</a><a href="#technology">Technology</a><a href="#business">Business</a><a href="#career">Career</a></div></div>
+</div></section>
+
+<section class="blog-section"><div class="container">
+<div class="blog-heading"><div><span class="section-kicker">FEATURED RESOURCE</span><h2>Start Learning</h2></div><p>Begin with foundational topics connected to the practical courses and professional skills taught at Proverra Academy.</p></div>
+<article class="featured-post" data-blog-post>
+<div class="featured-visual"><div><span>🤖</span><strong>Artificial Intelligence</strong></div></div>
+<div class="featured-content"><span class="post-category">Artificial Intelligence</span><h3>What Is Artificial Intelligence? A Beginner-Friendly Introduction</h3><div class="post-meta"><span>Beginner Guide</span><span>•</span><span>Learning Resource</span></div><p>Understand what artificial intelligence means, how AI differs from traditional software and where you may already encounter AI in everyday life.</p><a class="read-link" href="course-ai-beginners.html">Learn AI with Proverra →</a></div>
+</article></div></section>
+
+<section class="blog-section alt"><div class="container">
+<div class="blog-heading"><div><span class="section-kicker">LATEST LEARNING TOPICS</span><h2>Explore Practical Resources</h2></div><p>These topic cards establish the structure of the Proverra Academy blog. Full individual articles can be added progressively as the Learning Hub grows.</p></div>
+<div class="post-grid" id="blogPostGrid">
+<article class="post-card" id="ai" data-blog-post><div class="post-visual">🤖</div><div class="post-body"><span class="post-category">Artificial Intelligence</span><h3>How to Write Better AI Prompts</h3><p>Learn the building blocks of clear prompts and how context, instructions and output format can improve AI-assisted work.</p><a class="read-link" href="course-ai-masterclass.html">Explore AI Master Class →</a></div></article>
+<article class="post-card" id="design" data-blog-post><div class="post-visual">🎨</div><div class="post-body"><span class="post-category">Design</span><h3>Canva Skills Every Beginner Should Learn</h3><p>Explore practical design foundations for creating flyers, presentations, social media graphics and other visual content.</p><a class="read-link" href="course-canva-essentials.html">Explore Canva Essentials →</a></div></article>
+<article class="post-card" id="technology" data-blog-post><div class="post-visual">💻</div><div class="post-body"><span class="post-category">Technology</span><h3>Building Practical Digital Skills</h3><p>Understand why modern digital skills combine tool knowledge, problem solving, practice and continuous learning.</p><a class="read-link" href="schools.html#development">Explore Technology School →</a></div></article>
+<article class="post-card" id="business" data-blog-post><div class="post-visual">💼</div><div class="post-body"><span class="post-category">Business</span><h3>From Digital Skill to Business Opportunity</h3><p>Learn how practical skills can support freelancing, entrepreneurship, client services and the development of digital products.</p><a class="read-link" href="courses.html">Explore Courses →</a></div></article>
+<article class="post-card" id="career" data-blog-post><div class="post-visual">🚀</div><div class="post-body"><span class="post-category">Career Development</span><h3>Build Skills You Can Demonstrate</h3><p>Projects and practical outputs can help learners move beyond simply listing skills toward demonstrating what they can actually do.</p><a class="read-link" href="about.html">Our Learning Approach →</a></div></article>
+<article class="post-card" data-blog-post><div class="post-visual">🎬</div><div class="post-body"><span class="post-category">Creative AI</span><h3>From Prompt to Motion: Understanding the AI Content Workflow</h3><p>Explore the path from an idea and prompt to AI-generated visuals, motion, audio, editing and finished creative content.</p><a class="read-link" href="course-prompttomotion.html">Explore PromptToMotionAI →</a></div></article>
+</div>
+<p id="blogNoResults" style="display:none;text-align:center;margin-top:32px;color:#667085;">No matching learning resources found.</p>
+</div></section>
+
+<section class="blog-section"><div class="container">
+<div class="blog-heading"><div><span class="section-kicker">BROWSE BY CATEGORY</span><h2>Find Your Learning Area</h2></div><p>Use the Learning Hub alongside your courses to explore concepts, practical ideas and professional development topics.</p></div>
+<div class="category-grid">
+<a class="category-card" href="#ai"><span>🤖</span><div><h3>Artificial Intelligence</h3><p>AI fundamentals, prompting, automation and practical applications.</p></div></a>
+<a class="category-card" href="#design"><span>🎨</span><div><h3>Design</h3><p>Canva, visual communication, branding and creative skills.</p></div></a>
+<a class="category-card" href="#technology"><span>💻</span><div><h3>Technology</h3><p>Digital tools, technical knowledge and modern technology skills.</p></div></a>
+<a class="category-card" href="#business"><span>📈</span><div><h3>Business</h3><p>Entrepreneurship, digital business and practical commercial skills.</p></div></a>
+<a class="category-card" href="#career"><span>💼</span><div><h3>Career Development</h3><p>Employment skills, portfolios, communication and professional growth.</p></div></a>
+<a class="category-card" href="schools.html"><span>📖</span><div><h3>Learning Resources</h3><p>Guides and supporting materials across Proverra Academy schools.</p></div></a>
+</div></div></section>
+
+<section class="blog-cta"><div class="container"><div class="blog-cta-box"><div><h2>Ready to Turn Learning into Practice?</h2><p>Move from articles and learning resources into structured courses, assignments and practical projects.</p></div><div class="blog-cta-actions"><a href="courses.html" class="btn course-enroll-primary">Explore Courses →</a><a href="schools.html" class="blog-secondary">Browse Schools</a></div></div></div></section>
+</main>
+<footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <!-- BRAND -->
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    <span class="footer-logo-mark">P</span>
+
+                    <div>
+                        <strong>Proverra Academy</strong>
+                        <span>Learn • Create • Grow</span>
+                    </div>
+                </a>
+
+                <p class="footer-description">
+                    Practical online learning designed to help you build useful skills
+                    for employment, freelancing, business, and professional growth.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="YouTube">▶</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="TikTok">♪</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCHOOLS -->
+            <div class="footer-column">
+
+                <h3>Our Schools</h3>
+
+                <ul>
+                    <li>
+                        <a href="schools.html#design">
+                            School of Artificial Intelligence
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="schools.html#ai">
+                            School of Artificial Intelligence
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="schools.html#technology">
+                            School of Technology
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="schools.html#business">
+                            School of Business
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="schools.html">
+                            View All Schools
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li>
+                        <a href="courses.html">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Help & Support
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- STUDENT -->
+            <div class="footer-column">
+
+                <h3>Student Area</h3>
+
+                <ul>
+                    <li>
+                        <a href="https://learn.proverraacademy.com">
+                            Student Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://learn.proverraacademy.com">
+                            My Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            Free Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            Master Classes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Certificates
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-column footer-contact">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>
+                        <span>✉</span>
+
+                        <a href="mailto:info@proverraacademy.com">
+                            info@proverraacademy.com
+                        </a>
+                    </li>
+
+                    <li>
+                        <span>🌍</span>
+
+                        <span>
+                            Online Learning • Global Access
+                        </span>
+                    </li>
+
+                    <li>
+                        <span>📍</span>
+
+                        <span>
+                            Bremen, Germany
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM FOOTER -->
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-inner">
+
+                <p>
+                    © <span id="current-year"></span>
+                    Proverra Academy. All rights reserved.
+                </p>
+
+
+                <div class="footer-legal">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                    <a href="#">
+                        Cookie Policy
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.getElementById("blogSearch");
+    const button = document.getElementById("blogSearchButton");
+    const posts = Array.from(document.querySelectorAll("[data-blog-post]"));
+    const noResults = document.getElementById("blogNoResults");
+    function filterBlog() {
+        const q = (input?.value || "").trim().toLowerCase();
+        let visible = 0;
+        posts.forEach(post => {
+            const match = !q || post.textContent.toLowerCase().includes(q);
+            post.style.display = match ? "" : "none";
+            if (match) visible++;
+        });
+        if (noResults) noResults.style.display = visible ? "none" : "block";
+    }
+    button?.addEventListener("click", filterBlog);
+    input?.addEventListener("input", filterBlog);
+});
+</script>
+</body>
+</html>
